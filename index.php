@@ -1,12 +1,14 @@
 <?php
+
+/*
+*       updated to do call with one curl resource instead of two
+*       need to confirm that it's OK, a best practice
+*
+*/
 	echo "<title>Vine API test</title>";
 ?>
 
-/*
-*	updated to do call with one curl resource instead of two
-*	need to confirm that it's OK, a best practice
-*
-*/
+
 
 
 <?php 
