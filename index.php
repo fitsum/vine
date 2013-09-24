@@ -1,3 +1,14 @@
+<?php
+	echo "<title>Vine API test</title>";
+?>
+
+/*
+*	updated to do call with one curl resource instead of two
+*	need to confirm that it's OK, a best practice
+*
+*/
+
+
 <?php 
         // create curl resource 
         $ch = curl_init(); 
@@ -16,7 +27,7 @@
  //       echo $output;
 
         // close curl resource to free up system resources 
-        curl_close($ch); 
+//        curl_close($ch); 
 
         $joutput = json_decode($output);
         $key = $joutput->{'data'}->{'key'};
@@ -24,11 +35,12 @@
 
 
         // create curl resource 
-        $ch = curl_init(); 
+//        $ch = curl_init(); 
         $curl_headers = "vine-session-id:".$key;
 
         // set url and headers 
         curl_setopt($ch, CURLOPT_URL, "https://api.vineapp.com/timelines/popular"); 
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');        
 		curl_setopt($ch, CURLOPT_HTTPHEADER,array($curl_headers));
 
         //return the transfer as a string 
