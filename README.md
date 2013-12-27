@@ -8,7 +8,8 @@ VINE API
 	- transition
 	- controls
 	- (info?)
-- add geo & orientation
+		- likes count
+		- avatar
 
 
 ##LONG TODO
