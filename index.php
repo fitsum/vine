@@ -18,7 +18,7 @@
                 $ch = curl_init(); 
 
                 // set url and post parameters 
-        	$data = array('username' => 'fitsumbelay@gmail.com', 'password' => '8JeuKHvR');
+        	$data = array('username' => 'xxx', 'password' => 'xxx');
                 curl_setopt($ch, CURLOPT_URL, "https://api.vineapp.com/users/authenticate"); 
         	curl_setopt($ch, CURLOPT_POST, 1);
         	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
