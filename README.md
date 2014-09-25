@@ -6,7 +6,8 @@ VINE API
 ##SHORT TODO
 - UI
 	- transition
-	- controls
+		- waypoints, blur .past .future, de-blur .present 	
+	- custom controls
 	- (info?)
 		- likes count
 		- avatar
